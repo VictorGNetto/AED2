@@ -63,6 +63,8 @@ int main()
 
     traverse(tree, tree_minimum(tree, tree.root));
 
+    printf("\n");
+    tree_delete(&tree, iterative_tree_search(tree.root, 3));
     tree_delete(&tree, iterative_tree_search(tree.root, 4));
     traverse(tree, tree_minimum(tree, tree.root));
 

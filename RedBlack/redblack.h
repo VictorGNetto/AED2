@@ -1,5 +1,6 @@
 /*
     Binary Search Tree as described in the Introduction to Algorithms book
+    by Cormen, Leiserson, Rivest and Stein
     https://www.amazon.com.br/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844
 */
 
