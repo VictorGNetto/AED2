@@ -4,8 +4,8 @@
     https://www.amazon.com.br/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844
 */
 
-#ifndef _REDBLACK
-#define _REDBLACK
+#ifndef _REDBLACK_H
+#define _REDBLACK_H
 
 #define RED 0
 #define BLACK 1
