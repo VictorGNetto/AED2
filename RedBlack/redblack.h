@@ -34,8 +34,8 @@ void tree_insert(Tree *t, Node *n);
 void tree_delete(Tree *t, Node *n);  // n is supposed to be a node of t
 
 // Search
-Node *tree_search(Node *n, int key); // binary search
-Node *iterative_tree_search(Node *n, int key);  // iterative binary search
+Node *tree_search(Tree t, Node *n, int key); // binary search
+Node *iterative_tree_search(Tree t, Node *n, int key);  // iterative binary search
 Node *tree_minimum(Tree t, Node *n);  // n isn't NULL
 Node *tree_maximum(Tree t, Node *n);  // n isn't NULL
 Node *tree_successor(Tree t, Node *n);    // n isn't NULL

@@ -289,21 +289,21 @@ void tree_delete(Tree *t, Node *n)
         _rb_delete_fixup(t, x);
 }
 
-Node *tree_search(Node *n, int key)
+Node *tree_search(Tree t, Node *n, int key)
 {
     // Works since C is short circuiting
-    if (n == NULL || n->key == key)
+    if (n == t.nil || n->key == key)
         return n;
     
     if (key < n->key)
-        return tree_search(n->left, key);
+        return tree_search(t, n->left, key);
     else
-        return tree_search(n->right, key);
+        return tree_search(t, n->right, key);
 }
 
-Node *iterative_tree_search(Node *n, int key)
+Node *iterative_tree_search(Tree t, Node *n, int key)
 {
-    while (n && n->key != key)
+    while (n != t.nil && n->key != key)
     {
         if (key < n->key)
             n = n->left;
