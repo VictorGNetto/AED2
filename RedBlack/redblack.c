@@ -72,6 +72,11 @@ void tree_init(Tree *t)
     t->root = t->nil;
 }
 
+void tree_reset(Tree *t)
+{
+    t->root = t->nil;
+}
+
 void tree_free(Tree *t)
 {
     if (t)

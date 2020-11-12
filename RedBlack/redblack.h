@@ -29,6 +29,7 @@ typedef struct tree Tree;
 Node *create_node(int key);
 
 void tree_init(Tree *t);
+void tree_reset(Tree *t);
 void tree_free(Tree *t);
 void tree_insert(Tree *t, Node *n);
 void tree_delete(Tree *t, Node *n);  // n is supposed to be a node of t
