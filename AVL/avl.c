@@ -87,6 +87,11 @@ void tree_init(Tree *t)
     t->root = t->nil;
 }
 
+void tree_reset(Tree *t)
+{
+    t->root = t->nil;
+}
+
 void tree_free(Tree *t)
 {
     if (t)
@@ -263,6 +268,8 @@ Node *iterative_tree_search(Tree t, Node *n, int key)
 
 Node *tree_minimum(Tree t, Node *n)
 {
+    if (n == t.nil) return n;
+
     while (n->left != t.nil)
     {
         n = n->left;
@@ -273,6 +280,8 @@ Node *tree_minimum(Tree t, Node *n)
 
 Node *tree_maximum(Tree t, Node *n)
 {
+    if (n == t.nil) return n;
+
     while (n->right != t.nil)
     {
         n = n->right;
