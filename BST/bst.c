@@ -27,6 +27,11 @@ void tree_init(Tree *t)
     t->root = NULL;
 }
 
+void tree_free(Tree *t)
+{
+    t->root = NULL;
+}
+
 void tree_insert(Tree *t, Node *n)
 {
     Node *y = NULL;
